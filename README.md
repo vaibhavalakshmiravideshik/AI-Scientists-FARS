@@ -81,17 +81,34 @@ Examples:
 
 ---
 
-## Grail reviewer
+## GRAIL reviewer
 
-Reviewer-side analysis in this repository was organized through the Grail reviewer workflow. Grail was used to collect reviewer outputs, consensus-style review text, and structured score exports for comparative evaluation of the generated papers.
+Reviewer-side analysis in this repository was organized through the **GRAIL** reviewer workflow. GRAIL was used to manage paper-level review runs, collect structured evaluator outputs, and produce consensus-style review text for comparative assessment of the generated manuscripts.
+
+For the pilot-set evaluations archived here, GRAIL aggregates outputs from multiple reviewer models, including:
+
+- **GPT-5.4**
+- **Gemini 3.1 Pro**
+- **Claude Opus 4.6**
+
+The structured score exports associated with these reviews include model-level and synthesis-level assessments. As reflected in the archived score tables, the principal scoring dimensions include:
+
+- **overall**
+- **quality**
+- **clarity**
+- **significance**
+- **originality**
+- **confidence**
+
+The repository also stores reviewer-side metadata such as submission identifiers, completion status, model availability/failure information, consensus review text, and synthesis outputs.
 
 Reviewer-related artifacts in this repository are stored under:
 
 - [`AI-Reviewer-outputs/`](./AI-Reviewer-outputs/)
 
-Below is a screenshot of the Grail reviewer interface used in this workflow:
+**Figure.** GRAIL reviewer interface used to organize and inspect reviewer-side evaluation outputs for the paper comparison workflow.
 
-![Grail reviewer interface](./grail_reviewer-modified-Picsart-AiImageEnhancer.png)
+![GRAIL reviewer interface](./grail_reviewer-modified-Picsart-AiImageEnhancer.png)
 
 ---
 
