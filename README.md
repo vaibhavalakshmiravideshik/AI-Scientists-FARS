@@ -13,6 +13,13 @@ At a high level, the workflow represented here is:
 3. Reviewer-side outputs are collected and organized for comparative evaluation.
 4. Pilot-set and full-set artifacts are archived in a consistent, navigable structure.
 
+An important methodological distinction in this repository concerns the Sakana-generated papers. In the **pilot set**, Sakana v1 and Sakana v2 were run in a multi-idea setting: for each proposal, three paper drafts corresponding to three generated ideas were produced and then merged by an LLM into a single final paper artifact. In the **full set**, Sakana v1 and Sakana v2 were run in a single-idea setting, producing one paper per proposal without the pilot-stage multi-draft merging procedure. This distinction is important for interpreting the pilot and full collections, and the two protocol figures below summarize the corresponding workflows.
+
+<p align="center">
+  <img src="./readme_assets/protocol.png" alt="Pilot-set Sakana protocol" width="48%" />
+  <img src="./readme_assets/protocol2.png" alt="Full-set Sakana protocol" width="48%" />
+</p>
+
 ---
 
 ## What this repository contains
