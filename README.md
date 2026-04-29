@@ -34,10 +34,10 @@ The repository compares paper outputs from four AI scientist systems against the
 | System | Repository / reference |
 |---|---|
 | FARS | FARS-based proposal-to-paper source set represented inside this repository |
-| Cycle Researcher | Internal paper set included in this repository |
-| Data-to-Paper | [Data-to-Paper project](https://github.com/Technion-Kishony-lab/data-to-paper) |
+| Cycle Researcher | [Researcher](https://github.com/zhu-minjun/Researcher) |
+| Data-to-Paper | [Data-to-Paper](https://github.com/Technion-Kishony-lab/data-to-paper) |
 | Sakana v1 | [Sakana AI Scientist](https://github.com/SakanaAI/AI-Scientist) |
-| Sakana v2 | [Sakana AI Scientist](https://github.com/SakanaAI/AI-Scientist) |
+| Sakana v2 | [Sakana AI Scientist v2](https://github.com/SakanaAI/AI-Scientist-v2) |
 
 These names are used as the canonical folder labels throughout the repository.
 
@@ -187,6 +187,20 @@ Key files include:
 | [`analysis_ai_scientists_comparison/`](./AI-Reviewer-outputs/Results_pilot_set/analysis_ai_scientists_comparison/) | Summary statistics, plots, tables, and comparison outputs |
 
 At the moment, these results apply only to the pilot set. The full-set reviewer output folder has been created but is not yet populated with corresponding analysis files.
+
+---
+
+## Grail reviewer
+
+The pilot-set reviews in this repository were organized through the Grail reviewer workflow, which was used to collect reviewer-side outputs, consensus-style reviews, and structured score exports for downstream comparison.
+
+Reviewer-related outputs in this repository are stored under:
+
+- [`AI-Reviewer-outputs/`](./AI-Reviewer-outputs/)
+
+Below is a screenshot of the Grail reviewer interface used in this workflow:
+
+![Grail reviewer interface](./grail_reviewer-modified-Picsart-AiImageEnhancer.png)
 
 ---
 
