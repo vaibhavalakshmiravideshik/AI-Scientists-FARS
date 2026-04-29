@@ -1,4 +1,4 @@
-# AI-Scientists-FARS
+# FARS Paper Generation Benchmark
 
 ## Overview
 
