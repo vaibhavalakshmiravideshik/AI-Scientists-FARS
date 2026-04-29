@@ -85,6 +85,10 @@ Examples:
 
 Reviewer-side analysis in this repository was organized through the **GRAIL** reviewer workflow. GRAIL is a multi-agent scientific review system designed to accept manuscript PDFs and return structured peer-review style outputs for comparative evaluation.
 
+**Figure 1.** GRAIL reviewer interface used to organize and inspect reviewer-side evaluation outputs for the paper comparison workflow.
+
+![GRAIL reviewer interface](./grail_reviewer-modified-Picsart-AiImageEnhancer.png)
+
 For the pilot-set evaluations archived here, GRAIL aggregates independent reviewer outputs from multiple frontier models, including:
 
 - **GPT-5.4**
@@ -105,10 +109,6 @@ In addition to numeric scores, GRAIL returns written review text summarizing str
 Reviewer-related artifacts in this repository are stored under:
 
 - [`AI-Reviewer-outputs/`](./AI-Reviewer-outputs/)
-
-**Figure.** GRAIL reviewer interface used to organize and inspect reviewer-side evaluation outputs for the paper comparison workflow.
-
-![GRAIL reviewer interface](./grail_reviewer-modified-Picsart-AiImageEnhancer.png)
 
 ---
 
@@ -152,30 +152,6 @@ This directory contains reviewer-side outputs and evaluation artifacts.
 |---|---|
 | [`Results_pilot_set/`](./AI-Reviewer-outputs/Results_pilot_set/) | Pilot-set reviewer outputs, score tables, JSON exports, summary analyses, and comparison figures |
 | [`Results_full_set/`](./AI-Reviewer-outputs/Results_full_set/) | Reserved destination for future reviewer outputs and analyses associated with the full collection |
-
----
-
-## Corpus statistics
-
-The repository contains both a pilot comparison set and a larger full collection. Counts differ across systems because not every proposal was propagated through every downstream generation pipeline.
-
-| Artifact category | Count |
-|---|---:|
-| Pilot-set FARS proposals | 15 |
-| Pilot-set papers per AI scientist system | 15 each |
-| Full-collection FARS proposals currently archived in this repository | 189 |
-| Full-collection FARS papers | 167 |
-| Full-collection Cycle Researcher papers | 167 |
-| Full-collection Sakana v1 papers | 167 |
-| Full-collection Sakana v2 papers | 167 |
-| Full-collection Data-to-Paper papers | 33 |
-
-The primary reasons for count differences are:
-
-- the pilot collection is a deliberately smaller comparison subset;
-- the full collection is a broader proposal-linked corpus;
-- not every FARS proposal propagated into every downstream artifact type;
-- Data-to-Paper has a smaller full-collection footprint because dataset availability is a practical constraint for that pipeline.
 
 ---
 
