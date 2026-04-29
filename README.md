@@ -87,7 +87,7 @@ Reviewer-side analysis in this repository was organized through the **GRAIL** re
 
 **Figure 1.** GRAIL reviewer interface used to organize and inspect reviewer-side evaluation outputs for the paper comparison workflow.
 
-![GRAIL reviewer interface](./grail_reviewer-modified-Picsart-AiImageEnhancer.png)
+![GRAIL reviewer interface](./readme_assets/GRAIL_interface.png)
 
 For the pilot-set evaluations archived here, GRAIL aggregates independent reviewer outputs from multiple frontier models, including:
 
