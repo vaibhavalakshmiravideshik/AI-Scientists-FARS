@@ -13,11 +13,12 @@ At a high level, the workflow represented here is:
 3. Reviewer-side outputs are collected and organized for comparative evaluation.
 4. Pilot-set and full-set artifacts are archived in a consistent, navigable structure.
 
-An important methodological distinction in this repository concerns the Sakana-generated papers. In the **pilot set**, Sakana v1 and Sakana v2 were run in a multi-idea setting: for each proposal, three paper drafts corresponding to three generated ideas were produced and then merged by an LLM into a single final paper artifact. In the **full set**, Sakana v1 and Sakana v2 were run in a single-idea setting, producing one paper per proposal without the pilot-stage multi-draft merging procedure. This distinction is important for interpreting the pilot and full collections, and the two protocol figures below summarize the corresponding workflows.
+An important methodological distinction in this repository concerns the Sakana-generated papers. In the **pilot set**, Sakana v1 and Sakana v2 were run in a multi-idea setting: for each proposal, three paper drafts corresponding to three generated ideas were produced and then merged by an LLM into a single final paper artifact. In the **full set**, Sakana v1 and Sakana v2 were run in a single-idea setting, producing one paper per proposal without the pilot-stage multi-draft merging procedure. This distinction is important for interpreting the pilot and full collections, and the two architecture figures below summarize the corresponding workflows.
 
 <p align="center">
-  <img src="./readme_assets/protocol.png" alt="Pilot-set Sakana protocol" width="48%" />
-  <img src="./readme_assets/protocol2.png" alt="Full-set Sakana protocol" width="48%" />
+  <img src="./readme_assets/pilot-set-architecture.png" alt="Pilot-set Sakana architecture" width="47%" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="./readme_assets/full-set-architecture.png" alt="Full-set Sakana architecture" width="47%" />
 </p>
 
 ---
@@ -200,6 +201,17 @@ At present, the populated reviewer outputs are specific to the pilot collection.
 
 - [`AI-Reviewer-outputs/Results_pilot_set/`](./AI-Reviewer-outputs/Results_pilot_set/)
 - [`AI-Reviewer-outputs/Results_full_set/`](./AI-Reviewer-outputs/Results_full_set/)
+
+---
+
+## References
+
+- **FARS**: [Analemma — FARS](https://analemma.ai/fars/)
+- **FARS overview**: [Introducing FARS](https://analemma.ai/blog/introducing-fars/)
+- **Sakana v1**: [The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery](https://arxiv.org/abs/2408.06292)
+- **Sakana v2**: [The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search](https://arxiv.org/abs/2504.08066)
+- **Cycle Researcher**: [Researcher: Iterative Research Idea Generation over Scientific Literature with Large Language Models](https://arxiv.org/abs/2411.00816)
+- **Data-to-Paper**: [Data-to-Paper repository](https://github.com/Technion-Kishony-lab/data-to-paper)
 
 ---
 
