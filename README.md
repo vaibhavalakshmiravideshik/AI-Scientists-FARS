@@ -83,24 +83,24 @@ Examples:
 
 ## GRAIL reviewer
 
-Reviewer-side analysis in this repository was organized through the **GRAIL** reviewer workflow. GRAIL was used to manage paper-level review runs, collect structured evaluator outputs, and produce consensus-style review text for comparative assessment of the generated manuscripts.
+Reviewer-side analysis in this repository was organized through the **GRAIL** reviewer workflow. GRAIL is a multi-agent scientific review system designed to accept manuscript PDFs and return structured peer-review style outputs for comparative evaluation.
 
-For the pilot-set evaluations archived here, GRAIL aggregates outputs from multiple reviewer models, including:
+For the pilot-set evaluations archived here, GRAIL aggregates independent reviewer outputs from multiple frontier models, including:
 
 - **GPT-5.4**
 - **Gemini 3.1 Pro**
 - **Claude Opus 4.6**
 
-The structured score exports associated with these reviews include model-level and synthesis-level assessments. As reflected in the archived score tables, the principal scoring dimensions include:
+The structured score exports associated with these reviews include model-level scores as well as a synthesis-level assessment. The principal review dimensions archived in this repository are:
 
-- **overall**
-- **quality**
-- **clarity**
-- **significance**
-- **originality**
-- **confidence**
+- **Quality** — evaluates whether the submission is technically sound and whether its claims are adequately supported by theory, experiments, or analysis.
+- **Clarity** — evaluates whether the manuscript is clearly written, well organized, and sufficiently specified for expert readers to understand and reproduce the work.
+- **Significance** — evaluates the likely impact of the contribution and whether the results are likely to matter to the relevant research community.
+- **Originality** — evaluates the novelty of the ideas, methods, or findings and the extent to which the work is differentiated from prior literature.
+- **Overall** — summarizes the reviewer’s holistic assessment of the submission after considering the individual dimensions together.
+- **Confidence** — indicates the reviewer model’s confidence in its own assessment, given the evidence available in the manuscript.
 
-The repository also stores reviewer-side metadata such as submission identifiers, completion status, model availability/failure information, consensus review text, and synthesis outputs.
+In addition to numeric scores, GRAIL returns written review text summarizing strengths, weaknesses, questions for authors, limitations, and a multi-model consensus assessment. The repository also stores reviewer-side metadata such as submission identifiers, completion status, model availability or failure information, and synthesis outputs.
 
 Reviewer-related artifacts in this repository are stored under:
 
