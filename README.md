@@ -2,13 +2,13 @@
 
 ## Overview
 
-This repository is a curated research artifact collection for the comparative study of AI-generated scientific papers derived from FARS proposal documents. It brings together the source proposal corpus, paper outputs produced by multiple AI scientist systems, and reviewer-side evaluation artifacts used in downstream comparative analysis.
+This repository is a curated research artifact collection for the comparative study of AI-generated scientific papers derived from **FARS (Fully Automated Research System)** proposal documents. It brings together the source proposal corpus, paper outputs produced by multiple AI scientist systems, and reviewer-side evaluation artifacts used in downstream comparative analysis.
 
 The repository is intended to support publication-facing documentation and artifact inspection for the pilot and full experimental collections associated with this project.
 
 At a high level, the workflow represented here is:
 
-1. FARS proposal documents are constructed from FARS repositories.
+1. FARS proposal documents are constructed from FARS (Fully Automated Research System) repositories.
 2. Multiple AI scientist systems generate papers from those proposal documents.
 3. Reviewer-side outputs are collected and organized for comparative evaluation.
 4. Pilot-set and full-set artifacts are archived in a consistent, navigable structure.
@@ -41,7 +41,7 @@ The repository compares generated paper outputs from four AI scientist systems a
 
 | System | Reference |
 |---|---|
-| FARS | FARS-based proposal-to-paper source set represented directly in this repository |
+| FARS | **Fully Automated Research System (FARS)** proposal-to-paper source set represented directly in this repository |
 | Cycle Researcher | [Researcher](https://github.com/zhu-minjun/Researcher) |
 | Data-to-Paper | [Data-to-Paper](https://github.com/Technion-Kishony-lab/data-to-paper) |
 | Sakana v1 | [Sakana AI Scientist](https://github.com/SakanaAI/AI-Scientist) |
