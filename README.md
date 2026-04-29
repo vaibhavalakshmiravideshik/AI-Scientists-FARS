@@ -2,38 +2,38 @@
 
 ## Overview
 
-This repository is the curated artifact store for a comparative study of AI-generated scientific papers built from FARS proposal documents. It organizes the source proposal set, the paper outputs produced by multiple AI scientist systems, and the reviewer-side evaluation outputs used for analysis.
+This repository is a curated research artifact collection for the comparative study of AI-generated scientific papers derived from FARS proposal documents. It brings together the source proposal corpus, paper outputs produced by multiple AI scientist systems, and reviewer-side evaluation artifacts used in downstream comparative analysis.
+
+The repository is intended to support publication-facing documentation and artifact inspection for the pilot and full experimental collections associated with this project.
 
 At a high level, the workflow represented here is:
 
-1. Start from **FARS proposal documents** derived from FARS repositories.
-2. Generate papers from those proposals using multiple automated paper-generation systems.
-3. Collect reviewer outputs and evaluation summaries.
-4. Compare systems on a **pilot set** and maintain a larger **full proposal set** for broader study.
-
-This repository is designed as a **research artifact repository**, not as a software package. Its primary contents are proposal markdown files, generated paper PDFs, reviewer outputs, and analysis artifacts.
+1. FARS proposal documents are constructed from FARS repositories.
+2. Multiple AI scientist systems generate papers from those proposal documents.
+3. Reviewer-side outputs are collected and organized for comparative evaluation.
+4. Pilot-set and full-set artifacts are archived in a consistent, navigable structure.
 
 ---
 
 ## What this repository contains
 
-The repository contains three main content groups:
+This repository contains three principal artifact groups.
 
-| Component | Purpose | Main location |
+| Artifact group | Description | Primary location |
 |---|---|---|
-| FARS proposal and paper source material | The proposal corpus and corresponding FARS papers used as the source/reference set | [`AI-Scientist-generated-papers/pilot-paper-set/FARS/`](./AI-Scientist-generated-papers/pilot-paper-set/FARS/) and [`AI-Scientist-generated-papers/full-proposal-set/FARS/`](./AI-Scientist-generated-papers/full-proposal-set/FARS/) |
-| AI-scientist-generated papers | Papers produced from FARS proposals by multiple automated systems | [`AI-Scientist-generated-papers/`](./AI-Scientist-generated-papers/) |
-| Reviewer outputs and result summaries | Pilot-set evaluation outputs, score tables, JSON exports, and comparison artifacts | [`AI-Reviewer-outputs/`](./AI-Reviewer-outputs/) |
+| FARS source material | Proposal documents and FARS paper artifacts that serve as the source/reference corpus | [`AI-Scientist-generated-papers/pilot-paper-set/FARS/`](./AI-Scientist-generated-papers/pilot-paper-set/FARS/) and [`AI-Scientist-generated-papers/full-proposal-set/FARS/`](./AI-Scientist-generated-papers/full-proposal-set/FARS/) |
+| AI-scientist-generated papers | Papers generated from FARS proposals by multiple automated scientific writing systems | [`AI-Scientist-generated-papers/`](./AI-Scientist-generated-papers/) |
+| Reviewer and analysis artifacts | Reviewer-side outputs, score tables, JSON exports, and pilot-set comparison artifacts | [`AI-Reviewer-outputs/`](./AI-Reviewer-outputs/) |
 
 ---
 
-## AI scientist systems represented here
+## AI scientist systems represented in this repository
 
-The repository compares paper outputs from four AI scientist systems against the FARS paper set.
+The repository compares generated paper outputs from four AI scientist systems against the FARS paper set.
 
-| System | Repository / reference |
+| System | Reference |
 |---|---|
-| FARS | FARS-based proposal-to-paper source set represented inside this repository |
+| FARS | FARS-based proposal-to-paper source set represented directly in this repository |
 | Cycle Researcher | [Researcher](https://github.com/zhu-minjun/Researcher) |
 | Data-to-Paper | [Data-to-Paper](https://github.com/Technion-Kishony-lab/data-to-paper) |
 | Sakana v1 | [Sakana AI Scientist](https://github.com/SakanaAI/AI-Scientist) |
@@ -43,108 +43,24 @@ These names are used as the canonical folder labels throughout the repository.
 
 ---
 
-## Repository layout
+## Naming convention
 
-### 1. `AI-Scientist-generated-papers/`
+The repository uses a single, publication-oriented naming convention to keep the pilot and full collections parallel and easy to navigate.
 
-This is the main paper corpus folder. It contains two collections:
-
-- [`pilot-paper-set/`](./AI-Scientist-generated-papers/pilot-paper-set/)
-- [`full-proposal-set/`](./AI-Scientist-generated-papers/full-proposal-set/)
-
-#### `pilot-paper-set/`
-
-This is the smaller, publication-facing pilot comparison set.
-
-It contains the following folders:
-
-| Folder | Contents | Count |
-|---|---|---:|
-| [`Cycle Researcher/`](./AI-Scientist-generated-papers/pilot-paper-set/Cycle%20Researcher/) | Pilot papers generated by Cycle Researcher | 15 papers |
-| [`Data-to-Paper/`](./AI-Scientist-generated-papers/pilot-paper-set/Data-to-Paper/) | Pilot papers generated by Data-to-Paper | 15 papers |
-| [`FARS/`](./AI-Scientist-generated-papers/pilot-paper-set/FARS/) | Pilot FARS proposals and corresponding FARS papers | 15 proposals + 15 papers |
-| [`Sakana v1/`](./AI-Scientist-generated-papers/pilot-paper-set/Sakana%20v1/) | Pilot papers generated by Sakana v1 | 15 papers |
-| [`Sakana v2/`](./AI-Scientist-generated-papers/pilot-paper-set/Sakana%20v2/) | Pilot papers generated by Sakana v2 | 15 papers |
-
-The pilot-set reviewer outputs and analysis files are stored separately under:
-
-- [`AI-Reviewer-outputs/Results_pilot_set/`](./AI-Reviewer-outputs/Results_pilot_set/)
-
-#### `full-proposal-set/`
-
-This is the larger proposal-linked paper collection.
-
-It contains the following folders:
-
-| Folder | Contents | Count |
-|---|---|---:|
-| [`Cycle Researcher/`](./AI-Scientist-generated-papers/full-proposal-set/Cycle%20Researcher/) | Full-set papers generated by Cycle Researcher | 167 papers |
-| [`Data-to-Paper/`](./AI-Scientist-generated-papers/full-proposal-set/Data-to-Paper/) | Full-set papers generated by Data-to-Paper | 33 papers |
-| [`FARS/`](./AI-Scientist-generated-papers/full-proposal-set/FARS/) | Full FARS proposals and corresponding FARS papers | 189 proposals + 167 papers |
-| [`Sakana v1/`](./AI-Scientist-generated-papers/full-proposal-set/Sakana%20v1/) | Full-set papers generated by Sakana v1 | 167 papers |
-| [`Sakana v2/`](./AI-Scientist-generated-papers/full-proposal-set/Sakana%20v2/) | Full-set papers generated by Sakana v2 | 167 papers |
-
-The smaller `Data-to-Paper` count is expected. That pipeline depends more directly on dataset availability than the other systems, so only a subset of FARS proposals could be processed successfully into paper outputs.
-
----
-
-### 2. `AI-Reviewer-outputs/`
-
-This folder contains reviewer-side artifacts and result folders.
-
-| Folder | Purpose | Count |
-|---|---|---:|
-| [`Results_pilot_set/`](./AI-Reviewer-outputs/Results_pilot_set/) | Pilot-set score tables, JSON outputs, plots, and analysis summaries | 13 tracked files |
-| [`Results_full_set/`](./AI-Reviewer-outputs/Results_full_set/) | Placeholder folder for full-set reviewer outputs and future analysis artifacts | placeholder only |
-
-At present, the pilot set has populated reviewer outputs, while the full set has a prepared destination folder for future results.
-
----
-
-## Source corpus counts and why they differ
-
-The counts in this repository are intentionally not identical across all folders.
-
-### Summary of counts
-
-| Collection | Count |
-|---|---:|
-| Pilot proposals represented in the pilot FARS folder | 15 |
-| Pilot papers per AI scientist system | 15 each |
-| Full FARS proposals in the current repository snapshot | 189 |
-| Full FARS papers | 167 |
-| Full Cycle Researcher papers | 167 |
-| Full Sakana v1 papers | 167 |
-| Full Sakana v2 papers | 167 |
-| Full Data-to-Paper papers | 33 |
-
-### Why the counts differ
-
-- The **pilot paper set** is a deliberately small comparison subset used for focused evaluation.
-- The **full proposal set** is the larger corpus used for broader comparison.
-- The **FARS proposal count** is larger than the shared full paper comparison count because not every proposal propagated through every downstream stage.
-- **Data-to-Paper** has many fewer papers in the full set because some FARS-linked repositories do not expose datasets in a way that supports that generation pipeline.
-
----
-
-## Naming convention used in this repository
-
-To keep the repository publication-ready and easy to navigate, paper naming has been standardized.
-
-### Folder naming convention
+### Folder naming
 
 - Folder names identify the **AI scientist system**.
-- The same system names are used in both `pilot-paper-set` and `full-proposal-set`.
-- The full-set folders do **not** use a redundant `_full` suffix.
+- The same canonical system names are used in both the pilot and full collections.
+- The full collection does **not** use a redundant `_full` suffix.
 
 Examples:
 
 - `AI-Scientist-generated-papers/pilot-paper-set/Cycle Researcher/`
 - `AI-Scientist-generated-papers/full-proposal-set/Cycle Researcher/`
 
-### File naming convention
+### File naming
 
-- All generated paper files inside each AI scientist folder use the convention:
+Generated paper files use the convention:
 
 ```text
 FAxxxx.pdf
@@ -156,45 +72,20 @@ Examples:
 - `FA0042.pdf`
 - `FA0080.pdf`
 
-This is intentional:
+This design is intentional. The folder encodes the system identity, while the filename encodes the proposal/paper identifier. This avoids redundant naming while preserving a stable and concise artifact path.
 
-- the **folder name** identifies the system,
-- the **file name** identifies the proposal/paper ID,
-- and the combined path is concise, stable, and publication-friendly.
-
-For example:
+Examples:
 
 - `AI-Scientist-generated-papers/pilot-paper-set/Sakana v1/FA0001.pdf`
 - `AI-Scientist-generated-papers/full-proposal-set/Data-to-Paper/FA0042.pdf`
-
-This convention is preferable to embedding the system name redundantly into every filename.
-
----
-
-## Pilot-set analysis artifacts
-
-The pilot-set evaluation outputs are stored in:
-
-- [`AI-Reviewer-outputs/Results_pilot_set/`](./AI-Reviewer-outputs/Results_pilot_set/)
-
-Key files include:
-
-| File | Description |
-|---|---|
-| [`results_scores.csv`](./AI-Reviewer-outputs/Results_pilot_set/results_scores.csv) | Per-paper reviewer score table |
-| [`results.jsonl`](./AI-Reviewer-outputs/Results_pilot_set/results.jsonl) | Long-form consensus review outputs |
-| [`submission_ids.csv`](./AI-Reviewer-outputs/Results_pilot_set/submission_ids.csv) | Submission and score tracking table |
-| [`analysis_ai_scientists_comparison/`](./AI-Reviewer-outputs/Results_pilot_set/analysis_ai_scientists_comparison/) | Summary statistics, plots, tables, and comparison outputs |
-
-At the moment, these results apply only to the pilot set. The full-set reviewer output folder has been created but is not yet populated with corresponding analysis files.
 
 ---
 
 ## Grail reviewer
 
-The pilot-set reviews in this repository were organized through the Grail reviewer workflow, which was used to collect reviewer-side outputs, consensus-style reviews, and structured score exports for downstream comparison.
+Reviewer-side analysis in this repository was organized through the Grail reviewer workflow. Grail was used to collect reviewer outputs, consensus-style review text, and structured score exports for comparative evaluation of the generated papers.
 
-Reviewer-related outputs in this repository are stored under:
+Reviewer-related artifacts in this repository are stored under:
 
 - [`AI-Reviewer-outputs/`](./AI-Reviewer-outputs/)
 
@@ -204,50 +95,121 @@ Below is a screenshot of the Grail reviewer interface used in this workflow:
 
 ---
 
-## How to navigate this repository quickly
+## Repository organization
 
-If you only need the essentials:
+### `AI-Scientist-generated-papers/`
 
-### To browse the pilot comparison papers
+This directory contains the paper corpora and is divided into two collections.
 
-Go to:
+#### `pilot-paper-set/`
+
+This is the smaller pilot comparison collection.
+
+| Folder | Description | Count |
+|---|---|---:|
+| [`Cycle Researcher/`](./AI-Scientist-generated-papers/pilot-paper-set/Cycle%20Researcher/) | Pilot-set papers generated by Cycle Researcher | 15 papers |
+| [`Data-to-Paper/`](./AI-Scientist-generated-papers/pilot-paper-set/Data-to-Paper/) | Pilot-set papers generated by Data-to-Paper | 15 papers |
+| [`FARS/`](./AI-Scientist-generated-papers/pilot-paper-set/FARS/) | Pilot-set FARS proposals and corresponding FARS papers | 15 proposals + 15 papers |
+| [`Sakana v1/`](./AI-Scientist-generated-papers/pilot-paper-set/Sakana%20v1/) | Pilot-set papers generated by Sakana v1 | 15 papers |
+| [`Sakana v2/`](./AI-Scientist-generated-papers/pilot-paper-set/Sakana%20v2/) | Pilot-set papers generated by Sakana v2 | 15 papers |
+
+#### `full-proposal-set/`
+
+This is the larger proposal-linked collection.
+
+| Folder | Description | Count |
+|---|---|---:|
+| [`Cycle Researcher/`](./AI-Scientist-generated-papers/full-proposal-set/Cycle%20Researcher/) | Full-collection papers generated by Cycle Researcher | 167 papers |
+| [`Data-to-Paper/`](./AI-Scientist-generated-papers/full-proposal-set/Data-to-Paper/) | Full-collection papers generated by Data-to-Paper | 33 papers |
+| [`FARS/`](./AI-Scientist-generated-papers/full-proposal-set/FARS/) | FARS proposal corpus and associated FARS papers for the full collection | 189 proposals + 167 papers |
+| [`Sakana v1/`](./AI-Scientist-generated-papers/full-proposal-set/Sakana%20v1/) | Full-collection papers generated by Sakana v1 | 167 papers |
+| [`Sakana v2/`](./AI-Scientist-generated-papers/full-proposal-set/Sakana%20v2/) | Full-collection papers generated by Sakana v2 | 167 papers |
+
+The smaller Data-to-Paper count is expected. That pipeline depends more directly on dataset availability than the other systems, so only a subset of FARS proposals could be converted into paper outputs through that workflow.
+
+### `AI-Reviewer-outputs/`
+
+This directory contains reviewer-side outputs and evaluation artifacts.
+
+| Folder | Description |
+|---|---|
+| [`Results_pilot_set/`](./AI-Reviewer-outputs/Results_pilot_set/) | Pilot-set reviewer outputs, score tables, JSON exports, summary analyses, and comparison figures |
+| [`Results_full_set/`](./AI-Reviewer-outputs/Results_full_set/) | Reserved destination for future reviewer outputs and analyses associated with the full collection |
+
+---
+
+## Corpus statistics
+
+The repository contains both a pilot comparison set and a larger full collection. Counts differ across systems because not every proposal was propagated through every downstream generation pipeline.
+
+| Artifact category | Count |
+|---|---:|
+| Pilot-set FARS proposals | 15 |
+| Pilot-set papers per AI scientist system | 15 each |
+| Full-collection FARS proposals currently archived in this repository | 189 |
+| Full-collection FARS papers | 167 |
+| Full-collection Cycle Researcher papers | 167 |
+| Full-collection Sakana v1 papers | 167 |
+| Full-collection Sakana v2 papers | 167 |
+| Full-collection Data-to-Paper papers | 33 |
+
+The primary reasons for count differences are:
+
+- the pilot collection is a deliberately smaller comparison subset;
+- the full collection is a broader proposal-linked corpus;
+- not every FARS proposal propagated into every downstream artifact type;
+- Data-to-Paper has a smaller full-collection footprint because dataset availability is a practical constraint for that pipeline.
+
+---
+
+## Pilot-set analysis artifacts
+
+Pilot-set evaluation outputs are stored in:
+
+- [`AI-Reviewer-outputs/Results_pilot_set/`](./AI-Reviewer-outputs/Results_pilot_set/)
+
+Key files include:
+
+| File | Description |
+|---|---|
+| [`results_scores.csv`](./AI-Reviewer-outputs/Results_pilot_set/results_scores.csv) | Structured per-paper reviewer score table |
+| [`results.jsonl`](./AI-Reviewer-outputs/Results_pilot_set/results.jsonl) | Long-form consensus review outputs |
+| [`submission_ids.csv`](./AI-Reviewer-outputs/Results_pilot_set/submission_ids.csv) | Submission and score tracking table |
+| [`analysis_ai_scientists_comparison/`](./AI-Reviewer-outputs/Results_pilot_set/analysis_ai_scientists_comparison/) | Summary statistics, comparison plots, tables, and downstream analysis artifacts |
+
+At present, the populated reviewer outputs are specific to the pilot collection. The full-collection reviewer folder has been created but is not yet populated with corresponding analysis files.
+
+---
+
+## Quick navigation
+
+### Pilot paper collection
 
 - [`AI-Scientist-generated-papers/pilot-paper-set/`](./AI-Scientist-generated-papers/pilot-paper-set/)
 
-### To browse the larger full paper corpus
-
-Go to:
+### Full paper collection
 
 - [`AI-Scientist-generated-papers/full-proposal-set/`](./AI-Scientist-generated-papers/full-proposal-set/)
 
-### To inspect the FARS source material
-
-Go to:
+### Full FARS source material
 
 - [`AI-Scientist-generated-papers/full-proposal-set/FARS/fars_proposals/`](./AI-Scientist-generated-papers/full-proposal-set/FARS/fars_proposals/)
 - [`AI-Scientist-generated-papers/full-proposal-set/FARS/fars_papers/`](./AI-Scientist-generated-papers/full-proposal-set/FARS/fars_papers/)
 
-### To inspect reviewer outputs and analysis
-
-Go to:
+### Reviewer outputs
 
 - [`AI-Reviewer-outputs/Results_pilot_set/`](./AI-Reviewer-outputs/Results_pilot_set/)
 - [`AI-Reviewer-outputs/Results_full_set/`](./AI-Reviewer-outputs/Results_full_set/)
 
 ---
 
-## In short
+## Summary
 
-This repository is a structured artifact collection for comparing AI-generated scientific papers derived from FARS proposals.
+This repository provides a standardized, publication-facing organization of FARS-derived proposal documents, AI-generated paper outputs, and reviewer-side evaluation artifacts.
 
-- `AI-Scientist-generated-papers/` contains the paper corpora.
-- `pilot-paper-set/` contains the smaller benchmark collection.
-- `full-proposal-set/` contains the larger proposal-linked collection.
-- `AI-Reviewer-outputs/Results_pilot_set/` contains the current pilot evaluation outputs.
-- `AI-Reviewer-outputs/Results_full_set/` is the prepared destination for future full-set outputs.
+- The directory structure is parallel across pilot and full collections.
+- Generated paper filenames follow a single stable convention: `FAxxxx.pdf`.
+- System identities are encoded at the folder level rather than repeated inside filenames.
+- Reviewer outputs are separated cleanly from the paper corpora.
 
-The repository has been standardized so that:
-
-- system folders use a single consistent naming scheme,
-- paper files use a single stable `FAxxxx.pdf` naming convention,
-- and the structure is easy to understand for readers, reviewers, and collaborators.
+The result is a repository structure intended to be legible to readers, collaborators, and reviewers associated with formal conference submissions.
